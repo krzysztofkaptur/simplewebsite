@@ -1,0 +1,31 @@
+.info {
+    padding: 100px 0;
+}
+.container {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+}
+.figure {
+    max-width: 700px;
+    margin: auto;
+    @media (min-width: 991px) {
+        margin: 0;
+    }
+}
+.text {
+    @media (min-width: 768px) {
+        right: 15px;
+    }
+    @media (min-width: 991px) {
+        background-color: #fff;
+        right: 100px;
+        max-width: 500px;
+        position: absolute;
+        top: 30%;
+        padding: 20px;
+        font-size: 18px;
+        box-shadow: 0 0 15px #dedede;
+    }
+}

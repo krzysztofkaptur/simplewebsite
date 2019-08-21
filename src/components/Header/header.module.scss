@@ -1,0 +1,28 @@
+.header {
+    &_logo {
+        font-size: 24px;
+    }
+    box-shadow: 0 0 5px #dedede;
+}
+.container {
+    max-width: 1230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    flex-direction: column;
+    padding: 0 15px 15px;
+    @media (min-width: 576px) {
+        flex-direction: row;
+        padding: 0 15px;
+    }
+}
+.nav {
+    &_link {
+        margin: 0 15px;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}

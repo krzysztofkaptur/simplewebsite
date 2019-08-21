@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+figure {
+  margin: 0;
+}
+.slick-dots {
+  bottom: 0;
+}
+.slick-prev {
+  left: 25px;
+}
+.slick-next {
+  right: 25px;
+}
+.slick-arrow {
+  z-index: 2;
+}
