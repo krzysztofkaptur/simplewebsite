@@ -13,21 +13,33 @@ function Slider() {
         slidesToShow: 1,
         slidesToScroll: 1
     }
+
+    const slides = [
+        {
+            title: 'Slide 1', 
+            text: 'this is some text'
+        },
+        {
+            title: 'Slide 2', 
+            text: 'this is some text 2'
+        },
+        {
+            title: 'Slide 3', 
+            text: 'this is some text 3'
+        }
+    ]
+
     return (
         <section className={ styles.slider }>
             <SlickSlider {...settings}>
-                <article className={ styles.slide }>
-                    <h3 className={ styles.title }>Slide 1</h3>
-                    <p className={ styles.text }>this is some text</p>
-                </article>
-                <article className={ styles.slide }>
-                    <h3 className={ styles.title }>Slide 2</h3>
-                    <p className={ styles.text }>this is some text</p>
-                </article>
-                <article className={ styles.slide }>
-                    <h3 className={ styles.title }>Slide 3</h3>
-                    <p className={ styles.text }>this is some text</p>
-                </article>
+                { 
+                    slides.map(slide => (
+                        <article className={ styles.slide }>
+                            <h3 className={ styles.title }>{ slide.title }</h3>
+                            <p className={ styles.text }>{ slide.text }</p>
+                        </article>
+                    ))
+                }
             </SlickSlider>
         </section>
     )
